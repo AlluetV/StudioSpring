@@ -13,7 +13,7 @@ public class SkillsController {
     public String helloForm(){
         String html =
                 "<html>" +
-                "<body style='text-align:center;'>" + "<form method = 'get' action = '/skills'>" +
+                "<body >" + "<form method = 'get' action = '/skills'>" +
                 "<h1 style='font-size:500%;'>Skills Tracker</h1>" +
                 "<p style='font-size:200%;'>We have a few skills we would like to learn.Here is the list!</p>" +
                 "<ol style='font-size:150%;'>" +
@@ -21,25 +21,33 @@ public class SkillsController {
                         "<li>JavaScript</li>" +
                         "<li>Python</li>" +
                 "</ol>" +
+                "<label>Your Name</label>" +
                 "<input type = 'text' name = 'name' />" +
-                "<label for=favoriteLanguage>Choose Your Favorite Language:</label>" +
-                "<select name = 'favoriteLanguage'>"+
-                        "<option >Java</option>" +
-                        "<option >JavaScript</option>" +
-                        "<option >Python</option>" +
-                "</select>" +
+                "<ol>" +
+                    "<li>" +
+                        "<label for=favoriteLanguage>Choose Your Favorite Language:</label>" +
+                        "<select name = 'favoriteLanguage'>"+
+                            "<option >Java</option>" +
+                            "<option >JavaScript</option>" +
+                            "<option >Python</option>" +
+                         "</select>" +
+                "</li>" +
+                "<li>" +
                         "<label for=secondLanguage>Choose Your Second Favorite Language:</label>" +
-                        "<select name = 'secondLanguage'>"+
+                    "<select name = 'secondLanguage'>"+
                         "<option >Java</option>" +
                         "<option >JavaScript</option>" +
                         "<option >Python</option>" +
-                        "</select>" +
+                    "</select>" +
+                "</li>" +
+                "<li>" +
                         "<label for=thirdLanguage>Choose Your Third Favorite Language:</label>" +
-                        "<select name = 'thirdLanguage'>"+
+                    "<select name = 'thirdLanguage'>"+
                         "<option >Java</option>" +
                         "<option >JavaScript</option>" +
                         "<option >Python</option>" +
-                        "</select>" +
+                    "</select>" +
+                "</li>" +
                 "<input type = 'submit' value = 'Submit!' />" +
                 "</form>" +
                 "</body>" +
