@@ -13,26 +13,32 @@ public class SkillsController {
     public String helloForm(){
         String html =
                 "<html>" +
-                "<body>" +
-                 "<form method = 'get' action = '/skills'>" +
+                "<body style='text-align:center;'>" + "<form method = 'get' action = '/skills'>" +
+                "<h1 style='font-size:500%;'>Skills Tracker</h1>" +
+                "<p style='font-size:200%;'>We have a few skills we would like to learn.Here is the list!</p>" +
+                "<ol style='font-size:150%;'>" +
+                        "<li>Java</li>" +
+                        "<li>JavaScript</li>" +
+                        "<li>Python</li>" +
+                "</ol>" +
                 "<input type = 'text' name = 'name' />" +
                 "<label for=favoriteLanguage>Choose Your Favorite Language:</label>" +
                 "<select name = 'favoriteLanguage'>"+
-                        "<option value = 'java'>Java</option>" +
-                        "<option value = 'javascript'>JavaScript</option>" +
-                        "<option value = 'c++'>C++</option>" +
+                        "<option >Java</option>" +
+                        "<option >JavaScript</option>" +
+                        "<option >Python</option>" +
                 "</select>" +
                         "<label for=secondLanguage>Choose Your Second Favorite Language:</label>" +
                         "<select name = 'secondLanguage'>"+
-                        "<option value = 'java'>Java</option>" +
-                        "<option value = 'javascript'>JavaScript</option>" +
-                        "<option value = 'c++'>C++</option>" +
+                        "<option >Java</option>" +
+                        "<option >JavaScript</option>" +
+                        "<option >Python</option>" +
                         "</select>" +
                         "<label for=thirdLanguage>Choose Your Third Favorite Language:</label>" +
                         "<select name = 'thirdLanguage'>"+
-                        "<option value = 'java'>Java</option>" +
-                        "<option value = 'javascript'>JavaScript</option>" +
-                        "<option value = 'c++'>C++</option>" +
+                        "<option >Java</option>" +
+                        "<option >JavaScript</option>" +
+                        "<option >Python</option>" +
                         "</select>" +
                 "<input type = 'submit' value = 'Submit!' />" +
                 "</form>" +
@@ -47,10 +53,16 @@ public class SkillsController {
                         @RequestParam String favoriteLanguage,
                         @RequestParam String secondLanguage,
                         @RequestParam String thirdLanguage) {
-        return "Hello, " + name +
+        return "<body>" +
+                "<div>" +
+                "<h1 style='font-size:500%;'>" + name + "</h1>" +
+                "</div>" +
+                "<ol style='font-size:200%;'>" +
                 "<li>" + favoriteLanguage +  "</li>" +
                 "<li>" + secondLanguage +  "</li>" +
-                "<li>" + thirdLanguage + "</li>" ;
+                "<li>" + thirdLanguage + "</li>" +
+                "</ol>" +
+                "<body>";
     }
 
 
