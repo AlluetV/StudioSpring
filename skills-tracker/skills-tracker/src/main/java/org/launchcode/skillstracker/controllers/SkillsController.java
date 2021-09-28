@@ -21,12 +21,12 @@ public class SkillsController {
                         "<li>Java</li>" +
                         "<li>JavaScript</li>" +
                         "<li>Python</li>" +
-                "</ol>" +
-                "<label>Your Name</label>" +
+                "</ol>"+
+                "<label>Your Name </label>" +
                 "<input type = 'text' name = 'name' />" +
                 "<ol>" +
                     "<li>" +
-                        "<label for=favoriteLanguage>Choose Your Favorite Language:</label>" +
+                        "<label for=favoriteLanguage>Choose Your Favorite Language: </label>" +
                         "<select name = 'favoriteLanguage'>"+
                             "<option >Java</option>" +
                             "<option >JavaScript</option>" +
@@ -34,7 +34,7 @@ public class SkillsController {
                          "</select>" +
                 "</li>" +
                 "<li>" +
-                        "<label for=secondLanguage>Choose Your Second Favorite Language:</label>" +
+                        "<label for=secondLanguage>Choose Your Second Favorite Language: </label>" +
                     "<select name = 'secondLanguage'>"+
                         "<option >Java</option>" +
                         "<option >JavaScript</option>" +
@@ -42,7 +42,7 @@ public class SkillsController {
                     "</select>" +
                 "</li>" +
                 "<li>" +
-                        "<label for=thirdLanguage>Choose Your Third Favorite Language:</label>" +
+                        "<label for=thirdLanguage>Choose Your Third Favorite Language: </label>" +
                     "<select name = 'thirdLanguage'>"+
                         "<option >Java</option>" +
                         "<option >JavaScript</option>" +
