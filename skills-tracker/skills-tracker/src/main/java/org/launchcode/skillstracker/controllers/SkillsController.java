@@ -11,9 +11,10 @@ public class SkillsController {
     @GetMapping("form")
     @ResponseBody
     public String helloForm(){
-        String html =
+        String myListHtml =
                 "<html>" +
-                "<body >" + "<form method = 'get' action = '/skills'>" +
+                "<body >" +
+                "<form method = 'get' action = '/skills'>" +
                 "<h1 style='font-size:500%;'>Skills Tracker</h1>" +
                 "<p style='font-size:200%;'>We have a few skills we would like to learn.Here is the list!</p>" +
                 "<ol style='font-size:150%;'>" +
@@ -52,7 +53,7 @@ public class SkillsController {
                 "</form>" +
                 "</body>" +
                 "</html>";
-        return html;
+        return myListHtml;
     }
 
     @GetMapping("skills")
