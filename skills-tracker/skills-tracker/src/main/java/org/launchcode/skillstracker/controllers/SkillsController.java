@@ -14,7 +14,7 @@ public class SkillsController {
         String myListHtml =
                 "<html>" +
                 "<body >" +
-                "<form method = 'get' action = '/skills'>" +
+                "<form method = 'get' action = '/skills' autocomplete='off'>" +
                 "<h1 style='font-size:500%;'>Skills Tracker</h1>" +
                 "<p style='font-size:200%;'>We have a few skills we would like to learn.Here is the list!</p>" +
                 "<ol style='font-size:150%;'>" +
